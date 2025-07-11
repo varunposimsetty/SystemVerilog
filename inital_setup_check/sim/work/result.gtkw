@@ -1,0 +1,24 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Fri Jul 11 08:03:35 2025
+[*]
+[dumpfile] "C:\Users\Posimsetty\Desktop\SystemVerilog\sim\work\result.vcd"
+[dumpfile_mtime] "Fri Jul 11 08:03:27 2025"
+[dumpfile_size] 594
+[savefile] "C:\Users\Posimsetty\Desktop\SystemVerilog\sim\work\result.gtkw"
+[timestart] 5
+[size] 2560 1369
+[pos] -9 -9
+*-3.012739 11 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_top.
+[sst_width] 174
+[signals_width] 165
+[sst_expanded] 1
+[sst_vpaned_height] 427
+@28
+tb_top.rst
+tb_top.led
+tb_top.clk
+tb_top.dut.led
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,14 @@
+# ModelSim and simulation files
+_info
+_lib.qdb
+*.qgp
+*.qtl
+_vmake
+transcript
+
+# VCD files
+*.vcd
+
+# Everything in the work directory, except for GTKWAVE files
+work/*
+!work/result.gtkw 
