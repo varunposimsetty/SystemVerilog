@@ -27,7 +27,7 @@ module tb_state_machine;
     initial 
         begin
         $dumpfile("./work/result.vcd");
-        $dumpvars(1, tb_state_machine); 
+        $dumpvars(0, tb_state_machine); 
         
         NRST = 0; start = 0; rst = 0; CIN = 0; A = 0; B = 0;
 
