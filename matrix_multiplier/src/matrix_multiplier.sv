@@ -8,62 +8,45 @@ module matrix_multiplier(
     output logic out_strobe
 );
 
-   logic [14:0] temp_mul0, temp_mul1;
-   logic [15]
-   logic [1:0] state; 
+   logic [16:0] temp_mul = 0;
+   logic [16:0] accumlator = 0;
+   logic [1:0] state,next_state = 0; 
+   logic [7:0] x0,x1,y0,y1 = 0;
 
-     
- always_ff @(posedge clk or negedge NRST) begin 
-        if(NRST == 0) begin 
-                state <= {2{1'b0}};
-                out <= {17{1'b0}};
-                out_strobe <= 0;
-                temp_mul0 <= {15{1'b0}};
-                temp_mul1 <= {15{1'b0}};
-        end else begin
-            state <= next_state;
-            
-            case (state)
-                2'b00 : begin
-                    S <= 0;
-                    COUT <= 0;
-                    if(start == 1) begin 
-                        next_state <= 2'b01;
-                    end else if (start == 0) begin 
-                        state <= 2'b00;
-                    end 
+always_ff @(posedge clk or negedge NRST) begin 
+    if(NRST == 0) begin 
+        state <= 0;
+        out <= 0;
+        out_strobe <= 0;
+        x0 <= 0;
+        x1 <= 0;
+        y0 <= 0;
+        y1 <= 0;
+        temp_mul <= 0;
+        accumlator <= 0;
+        next_state <= 0;
+    end else begin
+            if  (start == 1) begin 
+                if (state == 0) begin 
+                    out_strobe <= 0;
+                    x0 <= A;
+                    y0 <= B; 
+                    temp_mul <=  $signed(A) * $signed(B);
+                    accumlator <=  $signed(A) * $signed(B);
+                    state <= 1;
+                end else if (state == 1) begin 
+                    x1 <= A;
+                    y1 <= B;
+                    temp_mul <=  $signed(A) * $signed(B);
+                    accumlator <= $signed(accumlator)  + $signed($signed(A) * $signed(B));
+                    state <= 2;
+                end else if(state == 2) begin 
+                    out <= accumlator;
+                    out_strobe <= 1;
+                    state <= 0;
                 end 
-                2'b01 : begin 
-                    S <= A^B^CIN;
-                    COUT <= 0;
-                    if(rst == 0) begin 
-                        next_state <= 2'b10;
-                    end else if (rst == 1) begin
-                        next_state <= 2'b00;
-                    end
-                end
-                2'b10 : begin 
-                    S <= 0;
-                    COUT <= ((A && B) ^ (CIN && ( A ^ B)));
-                    if(rst == 0) begin 
-                        next_state <= 2'b11;
-                    end else if (rst == 1) begin
-                        next_state <= 2'b00;
-                    end
-                end 
-                2'b11 : begin
-                    S <= A^B^CIN;
-                    COUT <= ((A && B) ^ (CIN && ( A ^ B)));
-                    if(rst == 1) begin 
-                        next_state <= 2'b00;
-                    end 
-                end 
-                default : begin 
-                    S <= 0;
-                    COUT <= 0;
-                    next_state <= 2'b00;
-                end
-            endcase
+            end
         end
     end 
 endmodule
+
