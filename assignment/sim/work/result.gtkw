@@ -1,0 +1,66 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Wed Jul 16 12:20:48 2025
+[*]
+[dumpfile] "C:\Users\Posimsetty\Desktop\SystemVerilog\assignment\sim\work\result.vcd"
+[dumpfile_mtime] "Wed Jul 16 12:17:10 2025"
+[dumpfile_size] 18262
+[savefile] "C:\Users\Posimsetty\Desktop\SystemVerilog\assignment\sim\work\result.gtkw"
+[timestart] 0
+[size] 2560 1369
+[pos] -1 -1
+*-5.289628 26 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_assignment.
+[treeopen] tb_assignment.uut.
+[sst_width] 193
+[signals_width] 238
+[sst_expanded] 1
+[sst_vpaned_height] 427
+@200
+-Inputs
+@28
+tb_assignment.uut.clk
+tb_assignment.uut.NRST
+@22
+#{tb_assignment.uut.A[10:0]} tb_assignment.uut.A[10] tb_assignment.uut.A[9] tb_assignment.uut.A[8] tb_assignment.uut.A[7] tb_assignment.uut.A[6] tb_assignment.uut.A[5] tb_assignment.uut.A[4] tb_assignment.uut.A[3] tb_assignment.uut.A[2] tb_assignment.uut.A[1] tb_assignment.uut.A[0]
+#{tb_assignment.uut.B[10:0]} tb_assignment.uut.B[10] tb_assignment.uut.B[9] tb_assignment.uut.B[8] tb_assignment.uut.B[7] tb_assignment.uut.B[6] tb_assignment.uut.B[5] tb_assignment.uut.B[4] tb_assignment.uut.B[3] tb_assignment.uut.B[2] tb_assignment.uut.B[1] tb_assignment.uut.B[0]
+@28
+tb_assignment.uut.state[1:0]
+@200
+-State 0
+@22
+tb_assignment.uut.binary_round_0[10:0]
+tb_assignment.uut.binary_round_1[10:0]
+tb_assignment.uut.binary_round_2[10:0]
+@200
+-State 1
+@22
+tb_assignment.uut.mul_value[20:0]
+tb_assignment.uut.accumlator[20:0]
+@200
+-State 2
+@22
+tb_assignment.uut.mul_value[20:0]
+tb_assignment.uut.accumlator[20:0]
+@200
+-State 3
+@22
+tb_assignment.uut.mul_value[20:0]
+tb_assignment.uut.accumlator[20:0]
+tb_assignment.uut.result[20:0]
+@28
+tb_assignment.uut.ready
+@200
+-Bin2BCD
+@22
+tb_assignment.uut.binary_to_bcd.binary[10:0]
+tb_assignment.uut.binary_to_bcd.bcd[11:0]
+tb_assignment.uut.binary_to_bcd.binary_to_bcd[11:0]
+@200
+-BCD2Bin
+@22
+tb_assignment.uut.bcd_to_binary.bcd[11:0]
+tb_assignment.uut.bcd_to_binary.binary[10:0]
+tb_assignment.uut.bcd_to_binary.bcd_to_binary[10:0]
+[pattern_trace] 1
+[pattern_trace] 0
