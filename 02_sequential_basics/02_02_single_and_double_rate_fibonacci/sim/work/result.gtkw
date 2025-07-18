@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Thu Jul 17 15:30:34 2025
+[*]
+[dumpfile] "C:\Users\Posimsetty\Desktop\SystemVerilog\02_sequential_basics\02_02_single_and_double_rate_fibonacci\sim\work\dump.vcd"
+[dumpfile_mtime] "Thu Jul 17 15:30:00 2025"
+[dumpfile_size] 8364
+[savefile] "C:\Users\Posimsetty\Desktop\SystemVerilog\02_sequential_basics\02_02_single_and_double_rate_fibonacci\sim\work\result.gtkw"
+[timestart] 0
+[size] 2560 1369
+[pos] -1 -1
+*-3.012739 25 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 174
+[signals_width] 165
+[sst_expanded] 1
+[sst_vpaned_height] 427
+@28
+testbench.dut.clk
+@22
+testbench.dut.num[15:0]
+testbench.dut.num2[15:0]
+testbench.dut.num3[15:0]
+[pattern_trace] 1
+[pattern_trace] 0
