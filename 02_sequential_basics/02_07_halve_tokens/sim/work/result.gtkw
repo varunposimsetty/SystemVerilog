@@ -1,31 +1,27 @@
 [*]
 [*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
-[*] Fri Jul 18 08:34:24 2025
+[*] Fri Jul 18 11:36:30 2025
 [*]
-[dumpfile] "C:\Users\Posimsetty\Desktop\SystemVerilog\02_sequential_basics\02_05_serial_comparator_most_significant_first\sim\work\dump.vcd"
-[dumpfile_mtime] "Fri Jul 18 08:33:20 2025"
-[dumpfile_size] 1873
-[savefile] "C:\Users\Posimsetty\Desktop\SystemVerilog\02_sequential_basics\02_05_serial_comparator_most_significant_first\sim\work\result.gtkw"
+[dumpfile] "C:\Users\Posimsetty\Desktop\SystemVerilog\02_sequential_basics\02_07_halve_tokens\sim\work\dump.vcd"
+[dumpfile_mtime] "Fri Jul 18 11:35:34 2025"
+[dumpfile_size] 8248
+[savefile] "C:\Users\Posimsetty\Desktop\SystemVerilog\02_sequential_basics\02_07_halve_tokens\sim\work\result.gtkw"
 [timestart] 0
 [size] 2560 1369
 [pos] 2551 -9
-*-4.316595 35 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-6.481781 165 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] testbench.
 [sst_width] 174
 [signals_width] 165
 [sst_expanded] 1
 [sst_vpaned_height] 427
 @28
-testbench.dut.clk
-testbench.dut.a
-testbench.dut.b
-@420
-testbench.dut.current_cycle
-testbench.dut.next_cycle
-@28
-testbench.dut.a_greater_b
-testbench.dut.a_less_b
-@29
-testbench.dut.a_eq_b
+testbench.i_halve_tokens.clk
+testbench.i_halve_tokens.rst
+testbench.i_halve_tokens.a
+testbench.i_halve_tokens.count[1:0]
+testbench.i_halve_tokens.pulse
+testbench.i_halve_tokens.a
+testbench.i_halve_tokens.b
 [pattern_trace] 1
 [pattern_trace] 0
